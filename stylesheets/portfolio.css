@@ -18,7 +18,7 @@ html, body {
 /* Header CSS */
 /**************/
 #name {
-	font-family: 'Raleway Dots', cursive;
+	font-family: 'Raleway', cursive;
 	font-size: 54px;
 	color: #CAFCD8;
 	text-align: center;
@@ -26,7 +26,7 @@ html, body {
 }
 
 #tag-line {
-	font-family: 'Raleway Dots', cursive;
+	font-family: 'Raleway', cursive;
 	font-size: 17px;
 	color: #CAFCD8;
 	text-align: center;	
