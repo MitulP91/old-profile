@@ -1,0 +1,304 @@
+/***************/
+/* General CSS */
+/***************/
+html {
+	height: 100%;
+	width: 100%;
+	background-color: #65C3C1;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 200%;
+	overflow: hidden;
+}
+
+
+/*************************************/
+/* Content Containers (Carousel-ish) */
+/*************************************/
+#main-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+#home-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: #65C3C1;
+	top: 0;
+	left: 0;
+}
+
+#project-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	background-color: #9b7db0;
+	text-align: center;
+}
+
+#contact-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	background-color: #6dd6a4;
+}
+
+
+/**********************/
+/* Home Container CSS */
+/**********************/
+#about-me {
+	width: 40%;
+	height: 100%;
+	text-align: center;
+}
+
+#home-name {
+	font-family: Oswald, sans-serif;
+	font-size: 80px;
+	color: #FFF175;
+	margin: 0px;
+}
+
+#copy {
+	width: 80%;
+	margin: 15% auto;
+	font-size: 18px;
+	font-family: Helvetica Neue, helvetica, sans-serif;
+	color: white;
+	line-height: 30px;
+	text-align: left;
+	padding: 20px;
+	background: rgba(0,0,0,0.4);
+}
+
+#start-btn {
+	padding: 15px 90px;
+	height: 194px;
+	width: 50px;
+	background-color: #F1C40E;
+	font-family: Oswald, sans-serif;
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+#start-btn:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+/*************************/
+/* Project Container CSS */
+/*************************/
+.project-name {
+	padding: 10px 0px;
+	font-family: Helvetica Neue, helvetica, sans-serif;
+	color: white;
+	list-style-type: none;
+	position: relative;
+}
+
+.project-img {
+	height: 140px;
+	width: 140px;
+	border: 5px solid #f5f5dc;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.project-overlay {
+	height: 140px;
+	width: 140px;
+	border: 5px solid #f5f5dc;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: -75px;
+	z-index: 100;
+	font-size: 12px;
+}
+
+.cont {
+	width: 64%;
+	height: 100%;
+	float: left;
+}
+
+.project-display {
+	width: 100%;	
+	height: 60%;
+	border: 5px solid #f5f5dc;
+	border-radius: 10px;
+	position: relative;
+	top: 4%;
+}
+
+.project-desc {
+	width: 90%;
+	height: 20%;
+	background-color: #f5f5dc;
+	border-radius: 10px;
+	position: relative;
+	top: 8%;
+	left: 6%;
+}
+
+.project-text {
+	position: relative;
+	top: 48%;
+}
+
+#a {
+	display: none;
+}
+
+#b {
+	display: none;
+}
+
+#c {
+	display: none;
+}
+
+#project-display-1 {
+	background-image: url(../images/revenge-the-revenge.png);
+	background-size: cover;
+}
+
+#project-display-2 {
+	background-image: url(../images/revenge-the-revenge.png);
+	background-size: cover;
+}
+
+#project-display-3 {
+	background-image: url(../images/revenge-the-revenge.png);
+	background-size: cover;
+}
+
+#project-1 {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -75px;
+}
+
+#project-2 {
+	display: none;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left: -75px;
+}
+
+#project-3 {
+	display: none;
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	margin-left: -75px;
+}
+
+#project-1-overlay {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	background-color: rgb(0,0,0);
+	opacity: 0;
+}
+
+#project-2-overlay {
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	background-color: rgb(0,0,0);
+	opacity: 0;
+}
+
+#project-3-overlay {
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	background-color: rgb(0,0,0);
+	opacity: 0;
+}
+
+#projects {
+	width: 30%;
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+	float: left;
+}
+
+#project-header {
+	font-family: Oswald, sans-serif;
+	font-size: 60px;
+	color: #f5f5dc;
+	margin: 0;
+}
+
+#project-names {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/******************/
+/* Contact Me CSS */
+/******************/
+#contact-header {
+	font-family: Oswald, sans-serif;
+	font-size: 60px;
+	color: white;
+	margin: 0 0 0 30px;
+}
+
+#contact-info {
+	text-align: center;
+	position: relative;
+	top: 20%;
+}
+
+#contact-info a {
+	text-decoration: none;
+	color: white;
+}
+
+.icon {
+	display: inline;
+	font-size: 90px;
+	padding: 0 30px;
+}
+
+
+
+
+/**************/
+/* Footer CSS */
+/**************/
+#footer-nav {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: rgb(255,255,255);
+	border-radius: 3px;
+	padding: 10px 0px;
+	width: 100%;
+}
+
+#footer-nav a {
+	margin: 0px 50px;
+	font-family: Helvetica Neue, helvetica, sans-serif;
+	text-decoration: none;
+	cursor: pointer;
+	color: #65C3C1;
+}

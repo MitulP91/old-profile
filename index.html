@@ -1,32 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mitul Patel</title>
-
+	<title>Test Portfolio</title>
+	<!-- CSS Stylesheets -->
 	<link rel="stylesheet" href="stylesheets/font-awesome/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="stylesheets/portfolio.css"/>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
-
+	<link rel="stylesheet" href="stylesheets/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<!-- Javascript Files -->
 	<script src="javascripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.color-2.1.2.min.js" type="text/javascript"></script>
 	<script src="javascripts/scripts.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="container" id="main-container">
-		<div class="container" id="splash-container">
-			<div id="intro">
-				<h2 id="name">Mitul Patel</h2>
-				<h4 id="tag-line">i make stuff on the internet</h4>
+	<!-- Main Container -->
+	<div id="main-container">
+		<!-- Splash Page -->
+		<div id="home-container">
+			<div id="about-me">
+				<h2 id="home-name">Mitul Patel</h2>
+				<div id="copy">
+					<p>
+						Hello everyone! My name is Mitul Patel. I am a full stack web developer.
+					</p>
+				</div>
+				<a id="start-btn">Check Out My Projects</a>
 			</div>
-			<div id="home-container">
-				<a id="code"><i class="btn icon-folder-open"></i><a>
-				<a id="git"><i class="btn icon-github-sign"></i></a>
-				<a id="mail"><i class="btn icon-envelope"></i></a>
-				<div id="image"></div>
+		</div> 
+		<!-- End Splash Page -->
+
+		<!-- Project Page -->
+		<div id="project-container">
+			<div id="projects">
+				<h2 id="project-header">Projects</h2>
+				<ul id="project-names">
+					<li class="project-name" id="proj1">
+						<img id="project-1" class="project-img" src="images/revenge-the-revenge.png" />
+						<div id="project-1-overlay" class="project-overlay"><span class="project-text">Until The Final Whistle</div>
+					</li>
+					<li class="project-name" id="proj2">
+						<img id="project-2" class="project-img" src="images/revenge-the-revenge.png" />
+						<div id="project-2-overlay" class="project-overlay"><span class="project-text">Revenge: The Revenge</span></div>
+					</li>
+					<li class="project-name" id="proj3">
+						<img id="project-3" class="project-img" src="images/revenge-the-revenge.png" />
+						<div id="project-3-overlay" class="project-overlay"><span class="project-text">Coming Soon...</span></div>
+					</li>
+				</ul>
 			</div>
-		</div>
-		<div class="container" id="project-container"></div>
-		<div class="container" id="container3"></div>
-		<div class="container" id="container4"></div>
+
+			<div id="a" class="cont">
+				<div id="project-display-1" class="project-display"></div>
+				<div id="project-display-1-text" class="project-desc">Hello</div>
+			</div>
+			<div id="b" class="cont">
+				<div id="project-display-2" class="project-display"></div>
+				<div id="project-display-2-text" class="project-desc"></div>
+			</div>
+			<div id="c" class="cont">
+				<div id="project-display-3" class="project-display"></div>
+				<div id="project-display-3-text" class="project-desc"></div>
+			</div>
+		</div> 
+		<!-- End Project Page -->
+
+		<!-- Contact Me Page -->
+		<div id="contact-container">
+			<h2 id="contact-header">Drop Me A Line: </h2>
+
+			<ul id="contact-info">
+				<li class="icon" id="email"><a target="_blank" href="mailto:mitulp91@gmail.com"><i class="icon-envelope"></i></a></li>
+				<li class="icon" id="github"><a target="_blank" href="https://github.com/MitulP91"><i class="icon-github"></i></a></li>
+				<li class="icon" id="stack"><a target="_blank" href="http://stackoverflow.com/users/1952087/mitulp91"><i class="icon-stackexchange"></i></a></li>
+				<li class="icon" id="linkedin"><a target="_blank" href="http://www.linkedin.com/pub/mitul-patel/79/108/26/"><i class="icon-linkedin"></i></a></li>
+			</ul>
+		</div> 
+		<!-- End Contact Me Page --> 
+	</div> 
+	<!-- End Main Container -->
+
+	<!-- Sticky Footer -->
+	<div id="footer-nav">
+		<a class="nav-link" id="about-me-nav">About Me</a>
+		<a class="nav-link" id="work-nav">My Work</a>
+		<a class="nav-link" id="contact-nav">Contact Me</a>
+		<a class="nav-link" id="extra-nav">Extras</a>
 	</div>
+	<!-- End Sticky Footer -->
 </body>
 </html>
