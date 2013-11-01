@@ -273,6 +273,10 @@ body {
 	color: white;
 }
 
+#contact-info a:hover {
+	color: #2c3e50;
+}
+
 .icon {
 	display: inline;
 	font-size: 90px;
