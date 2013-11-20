@@ -110,8 +110,46 @@ body {
 	top: 10%;
 }
 
+#stack {
+	color: white;
+	font-size: 30px;
+	font-family: 'Crete Round', serif;
+	position: relative;
+	top: 20%;
+}
+
+#stack-container {
+	color: white;
+	font-size: 30px;
+	font-family: 'Crete Round', serif;
+	position: relative;
+	top: 18%;
+}
+
+#categories {
+	list-style-type: none;
+	float: left;
+	width: 80%;
+	font-size: 25px;
+}
+
+#categories li {
+	padding: 8px 0;
+}
+
+#answers {
+	color: white;
+	list-style-type: none;
+}
+
 .orange {
 	color: #FA4B2A;
+}
+
+.white {
+	color: white;
+	margin-left: 5%;
+	font-size: 22px;
 }
 /***** About Me Container End *****/
 
