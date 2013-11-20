@@ -1,308 +1,253 @@
-/***************/
-/* General CSS */
-/***************/
-html {
+html, body {
 	height: 100%;
 	width: 100%;
-	background-color: #65C3C1;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	width: 200%;
-	overflow: hidden;
+	background: url(../images/dark_wall.png);
+}
+
+.clear {
+	clear: both;
 }
 
 
-/*************************************/
-/* Content Containers (Carousel-ish) */
-/*************************************/
-#main-container {
+/***** Nav Bar CSS *****/
+.nav {
+	color: #000000;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	white-space: nowrap;
+	display: block;
+	/*font-family: ‘Trebuchet MS’, Helvetica, sans-serif;*/
+	font-family: 'Poiret One', cursive;
+	font-size: 24px;
+	text-shadow: 0px 0px 1px #333;
+}
+
+#sidebar {
 	height: 100%;
-	width: 100%;
-	position: absolute;
+	width: 5%;
+	z-index: 5;
+	position: fixed;
 }
 
-#home-container {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	background-color: #65C3C1;
-	top: 0;
-	left: 0;
+#panel1 {
+	height: 33.33%;
+	background-color: #FFFFFF;
+	z-index: 5;
 }
 
-#project-container {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 100%;
-	background-color: #9b7db0;
-	text-align: center;
-}
-
-#contact-container {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 100%;
-	left: 100%;
-	background-color: #6dd6a4;
-}
-
-
-/**********************/
-/* Home Container CSS */
-/**********************/
 #about-me {
-	width: 40%;
-	height: 100%;
-	text-align: center;
+	position: relative;
+	top: 30%;
+	color: #FA4B2A;
 }
 
-#home-name {
-	font-family: Oswald, sans-serif;
-	font-size: 80px;
-	color: #FFF175;
-	margin: 0px;
+#about-me:hover {
+	color: #FA4B2A;
+	cursor: pointer;
+}
+
+#panel2 {
+	height: 33.33%;
+	background-color: #FFFFFF;
+	z-index: 5;
+}
+
+#work {
+	position: relative;
+	top: 30%;
+}
+
+#work:hover {
+	color: #FA4B2A;
+	cursor: pointer;
+}
+
+#panel3 {
+	height: 33.33%;
+	background-color: #FFFFFF;
+	z-index: 5;
+}
+
+#contact {
+	position: relative;
+	top: 30%;
+}
+
+#contact:hover {
+	color: #FA4B2A;
+	cursor: pointer;
+}
+/***** Nav Bar CSS End *****/
+
+/***** About Me Container *****/
+#about-container {
+	margin-left: 10%;
+	height: 100%;
+	width: 90%;
+	position: absolute;
+	/*display: none;*/
+}
+
+#name {
+	font-family: Playball, cursive;
+	font-size: 70px;
+	color: white;
 }
 
 #copy {
-	width: 80%;
-	margin: 15% auto;
-	font-size: 18px;
-	font-family: Helvetica Neue, helvetica, sans-serif;
 	color: white;
-	line-height: 30px;
-	text-align: left;
-	padding: 20px;
-	background: rgba(0,0,0,0.4);
-}
-
-#start-btn {
-	padding: 15px 90px;
-	height: 194px;
-	width: 50px;
-	background-color: #F1C40E;
-	font-family: Oswald, sans-serif;
-	font-size: 20px;
-	color: white;
-	cursor: pointer;
-}
-
-#start-btn:hover {
-	color: rgba(0,0,0,0.6);
-}
-
-/*************************/
-/* Project Container CSS */
-/*************************/
-.project-name {
-	padding: 10px 0px;
-	font-family: Helvetica Neue, helvetica, sans-serif;
-	color: white;
-	list-style-type: none;
+	font-size: 30px;
+	font-family: 'Crete Round', serif;
 	position: relative;
+	top: 10%;
 }
 
-.project-img {
-	height: 140px;
-	width: 140px;
-	border: 5px solid #f5f5dc;
-	border-radius: 50%;
-	cursor: pointer;
+.orange {
+	color: #FA4B2A;
 }
+/***** About Me Container End *****/
 
-.project-overlay {
-	height: 140px;
-	width: 140px;
-	border: 5px solid #f5f5dc;
-	border-radius: 50%;
-	cursor: pointer;
-	margin-left: -75px;
-	z-index: 100;
-	font-size: 12px;
-}
 
-.cont {
-	width: 64%;
+/***** My Work Container *****/
+#work-container {
+	margin-left: 10%;
 	height: 100%;
-	float: left;
-}
-
-.project-display {
-	width: 100%;	
-	height: 60%;
-	border: 5px solid #f5f5dc;
-	border-radius: 10px;
-	position: relative;
-	top: 4%;
-}
-
-.project-desc {
 	width: 90%;
-	height: 20%;
-	background-color: #f5f5dc;
-	border-radius: 10px;
-	position: relative;
-	top: 8%;
-	left: 6%;
-}
-
-.project-text {
-	position: relative;
-	top: 48%;
-}
-
-#a {
-	display: none;
-}
-
-#b {
-	display: none;
-}
-
-#c {
-	display: none;
-}
-
-#project-display-1 {
-	background-image: url(../images/revenge-the-revenge.png);
-	background-size: cover;
-}
-
-#project-display-2 {
-	background-image: url(../images/revenge-the-revenge.png);
-	background-size: cover;
-}
-
-#project-display-3 {
-	background-image: url(../images/revenge-the-revenge.png);
-	background-size: cover;
-}
-
-#project-1 {
-	display: none;
 	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -75px;
-}
-
-#project-2 {
 	display: none;
-	position: absolute;
-	top: 150px;
-	left: 50%;
-	margin-left: -75px;
-}
-
-#project-3 {
-	display: none;
-	position: absolute;
-	top: 300px;
-	left: 50%;
-	margin-left: -75px;
-}
-
-#project-1-overlay {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	background-color: rgb(0,0,0);
-	opacity: 0;
-}
-
-#project-2-overlay {
-	position: absolute;
-	top: 150px;
-	left: 50%;
-	background-color: rgb(0,0,0);
-	opacity: 0;
-}
-
-#project-3-overlay {
-	position: absolute;
-	top: 300px;
-	left: 50%;
-	background-color: rgb(0,0,0);
-	opacity: 0;
-}
-
-#projects {
-	width: 30%;
-	height: 100%;
-	text-align: center;
-	display: inline-block;
-	float: left;
 }
 
 #project-header {
-	font-family: Oswald, sans-serif;
-	font-size: 60px;
-	color: #f5f5dc;
-	margin: 0;
-}
-
-#project-names {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-
-/******************/
-/* Contact Me CSS */
-/******************/
-#contact-header {
-	font-family: Oswald, sans-serif;
-	font-size: 60px;
-	color: white;
-	margin: 0 0 0 30px;
-}
-
-#contact-info {
-	text-align: center;
-	position: relative;
-	top: 20%;
-}
-
-#contact-info a {
-	text-decoration: none;
+	font-family: Playball, cursive;
+	font-size: 70px;
 	color: white;
 }
 
-#contact-info a:hover {
-	color: #2c3e50;
+#projects {
+	height: 100%;
+	width: 100%;
+	margin-left: -1%;
 }
 
-.icon {
-	display: inline;
-	font-size: 90px;
-	padding: 0 30px;
+.project {
+	height: 65%;
+	width: 80%;
+	background-color: white;
+	display: inline-block;
+	margin: 5% 0 0 8%;
+	cursor: pointer;
 }
 
+#boom-container {
+	border: 5px solid white;
+}
 
+#revenge-container {
+	border: 5px solid white;
+}
 
+#whistle-container {
+	border: 5px solid white;
+}
 
-/**************/
-/* Footer CSS */
-/**************/
-#footer-nav {
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	background-color: rgb(255,255,255);
-	border-radius: 3px;
-	padding: 10px 0px;
+#boom-room {
+	height: 100%;
 	width: 100%;
 }
 
-#footer-nav a {
-	margin: 0px 50px;
-	font-family: Helvetica Neue, helvetica, sans-serif;
-	text-decoration: none;
-	cursor: pointer;
-	color: #65C3C1;
+#revenge {
+	height: 100%;
+	width: 100%;
 }
+
+#whistle {
+	height: 100%;
+	width: 100%;
+}
+
+.project-info {
+	margin-top: 5%;
+	width: 97%;
+	background-color: white;
+	text-align: center;
+}
+
+.project-title {
+	font-family: Playball, cursive;
+	color: black;
+	font-size: 30px;
+	margin-left: 5%;
+	text-align: left;
+}
+
+.project-title a:visited {
+	color: black;
+}
+
+.project-bio {
+	float: left;
+	margin-left: 5%;
+	margin-top: 1%;
+	width: 40%;
+	height: 100%;
+	font-family: 'Crete Round', serif;
+	font-size: 20px;
+	text-align: left;
+}
+
+.project-link {
+	text-decoration: none;
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+	padding: 2% 10%;
+	color: white;
+	background-color: black;
+	border: 5px solid #FA4B2A;
+}
+
+.link-container {
+	margin: 5% 0;
+	text-align: center;
+}
+
+.project-tech {
+	float: left;
+	margin-left: 13%;
+	margin-top: 1%;
+	width: 40%;
+	height: 100%;
+	font-family: 'Crete Round', serif;
+	font-size: 20px;
+	text-align: left;
+}
+
+.tech-list {
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
+/***** My Work Container End *****/
+
+
+/***** Contact Me Container *****/
+#contact-container {
+
+}
+/***** Contact Me Container End *****/
+
+
+
+
+
+
+
+
+
