@@ -13,6 +13,9 @@ body {
 	clear: both;
 }
 
+.last {
+	margin-bottom: 5%;
+}
 
 /***** Nav Bar CSS *****/
 .nav {
@@ -50,7 +53,6 @@ body {
 }
 
 #about-me:hover {
-	color: #FA4B2A;
 	cursor: pointer;
 }
 
@@ -66,7 +68,6 @@ body {
 }
 
 #work:hover {
-	color: #FA4B2A;
 	cursor: pointer;
 }
 
@@ -82,7 +83,6 @@ body {
 }
 
 #contact:hover {
-	color: #FA4B2A;
 	cursor: pointer;
 }
 /***** Nav Bar CSS End *****/
@@ -277,7 +277,17 @@ body {
 
 /***** Contact Me Container *****/
 #contact-container {
+	margin-left: 10%;
+	height: 100%;
+	width: 90%;
+	position: absolute;
+	display: none;
+}
 
+#contact-header {
+	font-family: Playball, cursive;
+	font-size: 70px;
+	color: white;
 }
 /***** Contact Me Container End *****/
 
