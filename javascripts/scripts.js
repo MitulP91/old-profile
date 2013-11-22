@@ -63,13 +63,13 @@ $(document).ready(function() {
 
 	// Work Page Link Transitions
 	$('.project-link').on('mouseenter', function() {
-		$('.project-link').stop().animate({
+		$(this).stop().animate({
 			color: '#FA4B2A'
 		}, 300);
 	});
 
 	$('.project-link').on('mouseleave', function() {
-		$('.project-link').stop().animate({
+		$(this).stop().animate({
 			color: 'white'
 		}, 300);
 	});

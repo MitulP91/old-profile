@@ -54,6 +54,7 @@ body {
 
 #about-me:hover {
 	cursor: pointer;
+	text-shadow: 0px 0px 3px #FA4B2A;
 }
 
 #panel2 {
@@ -69,6 +70,7 @@ body {
 
 #work:hover {
 	cursor: pointer;
+	text-shadow: 0px 0px 3px #FA4B2A;
 }
 
 #panel3 {
@@ -84,6 +86,7 @@ body {
 
 #contact:hover {
 	cursor: pointer;
+	text-shadow: 0px 0px 3px #FA4B2A;
 }
 /***** Nav Bar CSS End *****/
 
@@ -226,6 +229,10 @@ body {
 	text-align: left;
 }
 
+.project-title a {
+	color: black;
+}
+
 .project-title a:visited {
 	color: black;
 }
@@ -271,9 +278,7 @@ body {
 	margin-top: 2%;
 	margin-left: 5%;
 }
-
 /***** My Work Container End *****/
-
 
 /***** Contact Me Container *****/
 #contact-container {
@@ -282,12 +287,63 @@ body {
 	width: 90%;
 	position: absolute;
 	display: none;
+	text-align: center;
 }
 
 #contact-header {
 	font-family: Playball, cursive;
 	font-size: 70px;
 	color: white;
+	text-align: left;
+}
+
+#social {
+	list-style-type: none;
+}
+
+#social li {
+	display: inline;
+}
+
+#social li div {
+	float: left;
+}
+
+#social-container {
+	margin-top: 10%;
+}
+
+.social-icon {
+	font-size: 150px;
+	color: white;
+	padding: 0 30%;
+}
+
+.social-icon:hover {
+	color: #FA4B2A;
+	cursor: pointer;
+}
+
+#contact-info {
+	width: 60%;
+	margin-left: 20%;
+}
+
+#email {
+	color: white;
+	font-size: 25px;
+	font-family: 'Crete Round', serif;
+	float: left;
+	margin-top: 10%;
+}
+
+#phone {
+	color: white;
+	font-size: 25px;
+	font-family: 'Crete Round', serif;
+	margin-left: 15%;
+	float: left;
+	margin-top: 10%;
 }
 /***** Contact Me Container End *****/
 
