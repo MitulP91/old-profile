@@ -301,14 +301,6 @@ body {
 	list-style-type: none;
 }
 
-#social li {
-	display: inline;
-}
-
-#social li div {
-	float: left;
-}
-
 #social-container {
 	margin-top: 10%;
 }
@@ -316,7 +308,6 @@ body {
 .social-icon {
 	font-size: 150px;
 	color: white;
-	padding: 0 30%;
 }
 
 .social-icon:hover {
@@ -345,8 +336,36 @@ body {
 	float: left;
 	margin-top: 10%;
 }
-/***** Contact Me Container End *****/
 
+.text {
+	color: white;
+	font-family: 'Crete Round', serif;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10%;
+}
+
+.left {
+	float: left;
+	padding: 0 5%;
+}
+/***** Contact Me Container End *****/
+/***** Resume Page *****/
+#resume-title {
+	font-family: Playball, cursive;
+	font-size: 70px;
+	color: white;
+	text-align: left;
+	margin-bottom: 2%;
+}
+
+#pdf {
+	height: 80%;
+	width: 75%;
+	margin-left: 12.5%;
+	overflow-x: hidden;
+}
+/***** Resume Page End *****/
 
 
 
