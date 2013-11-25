@@ -194,14 +194,37 @@ hr {
 
 #boom-container {
 	border: 5px solid white;
+	width: 80%;
+	display: inline-block;
+	position: relative;
+}
+
+#boom-container:after {
+	padding-top: 56.25%; /*16:9 ratio*/
+  display: block;
+  content: '';
 }
 
 #revenge-container {
 	border: 5px solid white;
+	width: 80%;
+	display: inline-block;
+	position: relative;
 }
 
 #whistle-container {
 	border: 5px solid white;
+	width: 80%;
+	display: inline-block;
+	position: relative;
+}
+
+.wrapper {
+	position: absolute;
+  top: 0; 
+  bottom: 0; 
+  right: 0; 
+  left: 0
 }
 
 #boom-room {
