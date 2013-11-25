@@ -309,10 +309,11 @@ hr {
 
 #social-container {
 	margin-top: 10%;
+	margin-left: 5%;
 }
 
 .social-icon {
-	font-size: 150px;
+	font-size: 125px;
 	color: white;
 	margin-top: 10%;
 }
@@ -342,6 +343,10 @@ hr {
 	margin-left: 15%;
 	float: left;
 	margin-top: 10%;
+}
+
+#big-icon {
+	margin-top: -0.75%;
 }
 
 .text {
