@@ -9,6 +9,11 @@ body {
 	background: url(../images/dark_wall.png);
 }
 
+hr {
+	color: white;
+	margin-top: 8%;
+}
+
 .clear {
 	clear: both;
 }
